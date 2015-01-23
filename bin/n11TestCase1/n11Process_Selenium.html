@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.n11.com/" />
+<title>Login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Login</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Giriş Yap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Üye Girişi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>asliaktugacar@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>sufle123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=loginButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Çıkış Yap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchData</td>
+	<td>samsung</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon.iconSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.resultText</td>
+	<td>Samsung için*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=currentPage</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='p-13631913']/div[2]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='p-13631913']/div[2]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Hesabım</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.profile &gt; span</td>
+	<td>Merhaba,<br /> Aslı Aktuğ</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Favorilerim')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=buyerProductWatchLegend</td>
+	<td>Favorilerim</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Samsung i8200 Galaxy S3 Mini Cep Telefonu</td>
+	<td>Samsung i8200 Galaxy S3 Mini Cep Telefonu</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Kaldır</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Samsung i8200 Galaxy S3 Mini Cep Telefonu</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
