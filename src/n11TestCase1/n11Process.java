@@ -25,7 +25,7 @@ public class n11Process {
 		selenium.click("link=Giriş Yap");
 		selenium.waitForPageToLoad("30000");
 		
-		verifyEquals("Üye Giriþi", selenium.getText("css=h2"));
+		verifyEquals("Üye Girişi", selenium.getText("css=h2"));
 		
 		//A sample account currently working with a simple password
 		selenium.type("id=email", "asliaktugacar@gmail.com");
@@ -55,7 +55,7 @@ public class n11Process {
 		}
 		selenium.click("//div[@id='p-13631913']/div[2]/span[2]");
 		
-		selenium.click("link=Hesabým");
+		selenium.click("link=Hesabım");
 		selenium.waitForPageToLoad("30000");
 		
 		//It appears only when logged in this text (Hesabým {Name}) appears on screen.
