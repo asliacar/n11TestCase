@@ -22,10 +22,10 @@ public class n11Process {
 		//On first import charaters might not be suitable for unicode, we must always check and correct them
 		
 		selenium.open("/");
-		selenium.click("link=Giriþ Yap");
+		selenium.click("link=GiriÅŸ Yap");
 		selenium.waitForPageToLoad("30000");
 		
-		verifyEquals("Üye Giriþi", selenium.getText("css=h2"));
+		verifyEquals("Ãœye GiriÃ¾i", selenium.getText("css=h2"));
 		
 		//A sample account currently working with a simple password
 		selenium.type("id=email", "asliaktugacar@gmail.com");
@@ -33,14 +33,14 @@ public class n11Process {
 		selenium.click("id=loginButton");
 		selenium.waitForPageToLoad("30000");
 		
-		verifyTrue(selenium.isElementPresent("link=Giriþ Yap"));
+		verifyTrue(selenium.isElementPresent("link=GiriÅŸ Yap"));
 		
 		selenium.type("id=searchData", "samsung");
 		selenium.click("css=span.icon.iconSearch");
 		selenium.waitForPageToLoad("30000");
 		
-		//In n11.com, "Samsung için" text seems to be a logical text choice to search and verify
-		verifyTrue(selenium.getText("css=div.resultText").matches("^Samsung için[\\s\\S]*$"));
+		//In n11.com, "Samsung iÃ§in" text seems to be a logical text choice to search and verify
+		verifyTrue(selenium.getText("css=div.resultText").matches("^Samsung iÃ§in[\\s\\S]*$"));
 		
 		selenium.click("link=2");
 		selenium.waitForPageToLoad("30000");
@@ -55,12 +55,12 @@ public class n11Process {
 		}
 		selenium.click("//div[@id='p-13631913']/div[2]/span[2]");
 		
-		selenium.click("link=Hesabým");
+		selenium.click("link=HesabÃ½m");
 		selenium.waitForPageToLoad("30000");
 		
-		//It appears only when logged in this text (Hesabým {Name}) appears on screen.
+		//It appears only when logged in this text (HesabÃ½m {Name}) appears on screen.
 		//Therefore, we could verify it by searching this text
-		verifyEquals("Merhaba,\n Aslý Aktuð", selenium.getText("css=div.profile > span"));
+		verifyEquals("Merhaba,\n AslÄ± AktuÄŸ", selenium.getText("css=div.profile > span"));
 		
 		selenium.click("xpath=(//a[contains(text(),'Favorilerim')])[2]");
 		selenium.waitForPageToLoad("30000");
@@ -68,7 +68,7 @@ public class n11Process {
 		verifyEquals("Favorilerim", selenium.getText("id=buyerProductWatchLegend"));
 		verifyEquals("Samsung i8200 Galaxy S3 Mini Cep Telefonu", selenium.getText("link=Samsung i8200 Galaxy S3 Mini Cep Telefonu"));
 		
-		selenium.click("link=Kaldýr");
+		selenium.click("link=KaldÄ±r");
 		selenium.waitForPageToLoad("30000");
 		
 		//We could have search for the Id of the product that has been added to the link's Url,
