@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Asli/Desktop/selenium-server-standalone-2.41.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Asli/Desktop/selenium-java-2.41.0/selenium-2.41.0/selenium-java-2.41.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Asli/Desktop/selenium-java-2.41.0/selenium-2.41.0/selenium-java-2.41.0-srcs.jar"/>
+	<classpathentry kind="lib" path="references/selenium-java-2.41.0-srcs.jar"/>
+	<classpathentry kind="lib" path="references/selenium-java-2.41.0.jar"/>
+	<classpathentry kind="lib" path="references/selenium-server-standalone-2.41.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

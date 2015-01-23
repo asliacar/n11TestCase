@@ -72,7 +72,7 @@ public class n11Process {
 		selenium.waitForPageToLoad("30000");
 		
 		//We could have search for the Id of the product that has been added to the link's Url,
-		//but, it seems like searching the name of the product works as well.
+		//but, it seems like searching the name of the product works 
 		verifyFalse(selenium.isTextPresent("Samsung i8200 Galaxy S3 Mini Cep Telefonu"));
 	}
 
