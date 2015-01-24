@@ -22,6 +22,7 @@ public class n11Process {
 		//On first import charaters might not be suitable for unicode, we must always check and correct them
 		
 		selenium.open("/");
+		verifyEquals("", selenium.getText("css=img[alt=\"Alışverişin Uğurlu Adresi\"]"));
 		selenium.click("link=Giriş Yap");
 		selenium.waitForPageToLoad("30000");
 		
